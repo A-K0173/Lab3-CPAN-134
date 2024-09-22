@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aareez K's Blog</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333333;
+            }
+
+            h2 {
+                text-align: center;
+                color: #333333;
+                margin-top: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+                color: #555555;
+            }
+
+            form {
+                width: 80%;
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 10px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+            }
+
+            input, textarea, select {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: #009879;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+
+            button:hover {
+                background-color: #005040;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Aareez K's Blog</h2>
+        <h3>Submit a Blog Post</h3>
+        <form>
+            <input type="text" name="title" placeholder="Blog Post Title" required autofocus>
+            <input type="text" name="author" placeholder="Your Name (Author's Name)" required>
+            <textarea name="content" rows="6" placeholder="Write your Blog Post here." required></textarea>
+            <select name="category" required>
+                <option value="">--Select Category--</option>
+                <option value="general">General</option>
+                <option value="fun">Fun</option>
+                <option value="misc">Misc</option>
+                <option value="important">Important</option>
+            </select>
+            <button type="submit" onclick="alert('Form submitted!')">Submit Blog Post</button>
+        </form>
+    </body>
+</html>
